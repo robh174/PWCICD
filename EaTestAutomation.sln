@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EaApplicationTest", "EaAppl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EaSpecflowTests", "EaSpecflowTests\EaSpecflowTests.csproj", "{C43A87C4-F59B-49D6-9542-EAA0360BBDAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductAPI", "ProductAPI\ProductAPI.csproj", "{3031FAB6-F900-450A-A994-55D74500C345}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAWebApp", "EAWebApp\EAWebApp.csproj", "{6E01426E-31C3-411C-9E6E-EBDA0C3393CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{C43A87C4-F59B-49D6-9542-EAA0360BBDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C43A87C4-F59B-49D6-9542-EAA0360BBDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C43A87C4-F59B-49D6-9542-EAA0360BBDAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3031FAB6-F900-450A-A994-55D74500C345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3031FAB6-F900-450A-A994-55D74500C345}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3031FAB6-F900-450A-A994-55D74500C345}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3031FAB6-F900-450A-A994-55D74500C345}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E01426E-31C3-411C-9E6E-EBDA0C3393CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E01426E-31C3-411C-9E6E-EBDA0C3393CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E01426E-31C3-411C-9E6E-EBDA0C3393CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E01426E-31C3-411C-9E6E-EBDA0C3393CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
