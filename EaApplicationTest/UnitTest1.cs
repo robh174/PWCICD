@@ -98,7 +98,7 @@ public class UnitTest1
     //     await Assertions.Expect(element).ToBeVisibleAsync();
     // }
     
-    [Theory(Skip = "SKipping local tests"), AutoData]
+    [Theory, AutoData]
     public async Task TestWithAutoFixtureData(Product product)
     {
         var page = await _playwrightDriver.Page;
