@@ -22,6 +22,24 @@ public class UnitTest1
         _productListPage = productListPage;
         _productPage = productPage;
     }
+    
+    [Fact]
+    public async Task Test1()
+    {
+        var page = await _playwrightDriver.Page;
+
+        await page.GotoAsync("http://eaapp.somee.com");
+
+        await page.GetByRole(AriaRole.Link, new PageGetByRoleOptions { Name = "Login" }).ClickAsync();
+
+        await page.GetByLabel("UserName").FillAsync("admin");
+
+        await page.GetByLabel("Password").FillAsync("password");
+
+        await page.GetByRole(AriaRole.Button, new PageGetByRoleOptions { Name = "Log in" }).ClickAsync();
+
+        await page.GetByRole(AriaRole.Link, new PageGetByRoleOptions { Name = "Employee List" }).ClickAsync();
+    }
 
     // [Theory]
     // [InlineData("Speaker", "Gaming Speaker", 2000, "2")]
@@ -80,7 +98,7 @@ public class UnitTest1
     //     await Assertions.Expect(element).ToBeVisibleAsync();
     // }
     
-    [Theory, AutoData]
+    [Theory(Skip = "SKipping local tests"), AutoData]
     public async Task TestWithAutoFixtureData(Product product)
     {
         var page = await _playwrightDriver.Page;

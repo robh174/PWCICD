@@ -22,7 +22,7 @@ public class UnitTest2
         _productPage = productPage;
     }
 
-    [Theory, AutoData]
+    [Theory(Skip = "SKipping local tests"), AutoData]
     public async Task TestWithAutoFixtureData(Product product)
     {
         await _testFixtureBase.NavigateToUrl();
